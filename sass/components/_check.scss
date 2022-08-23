@@ -1,0 +1,27 @@
+.modal__field-checkbox {
+    margin-bottom: 30px;
+}
+
+.modal__field-check:checked+.check-text span {
+    background-color: var(--accent-color);
+    border: none;
+
+}
+
+.modal__field-check:checked+.check-text .modal__field-icon {
+    fill: #ffffff;
+}
+
+.modal__field-check {
+    margin-left: 14px;
+    margin-right: 7px;
+}
+
+.modal__field-check:checked+.modal__field-text span {
+    background-color: var(--brand-color);
+    border: none;
+}
+
+.modal__field-check:checked+.modal__field-text .check-icon {
+    fill: #ffffff;
+}

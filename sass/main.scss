@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/hidden';
+
+@import './base/reset';
+@import './base/common';
+
+@import './components/container';
+@import './components/btn';
+@import './components/header';
+@import './components/main_title';
+@import './components/about';
+@import './components/work';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/backdrop';
+@import './components/pictures';
+@import './components/input';
+
+@import './components/modal';
+
+@import './components/check';
