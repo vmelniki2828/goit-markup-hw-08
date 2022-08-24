@@ -6,7 +6,47 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    @include mobile {
+            width: 480px;
+            flex-direction: column;
+        }
+    
+        @include tablet {
+            width: 768px;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        @include desktop {
+            width: 1200px;
+            justify-content: flex-start;
+        }
+}
+
+.footer__tg{
+    @include mobile {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+    
+            flex-wrap: wrap;
+        }
+    
+        @include desktop {
+            display: block;
+            margin-top: 12px;
+            margin-left: 93px;
+        }
 }
 
 .footer__contacts {
@@ -17,6 +57,21 @@
 .footer__list {
     list-style-type: none;
     text-decoration: none;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
 }
 
 .footer__item:not(:last-child) {
@@ -24,14 +79,34 @@
 }
 
 .footer__link {
-    margin-left: 70px;
-    margin-right: 93px;
+    @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+    
+        @include tablet {
+            margin-left: 165px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+        }
+    
+        @include desktop {
+            margin-left: 70px;
+            display: block;
+            margin-top: 12px;
+        }
 }
 
 .footer__title {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -47,6 +122,10 @@
     width: 44px;
     height: 44px;
     margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0px;
+    }
 }
 
 .footer__item-icon:first-child {
@@ -77,6 +156,24 @@
 
 .footer__form {
     display: flex;
+
+    @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        @include desktop {
+            flex-direction: row;
+            align-items: baseline;
+            flex-wrap: nowrap;
+        }
 }
 
 .footer__input {
@@ -88,6 +185,18 @@
     height: 50px;
     padding-left: 16px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mobile {
+            margin-bottom: 20px;
+        }
+    
+        @include tablet {
+            margin-bottom: 30px;
+        }
+    
+        @include desktop {
+            width: 358px;
+        }
 
 }
 
@@ -164,4 +273,25 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #ffffff;
+}
+
+.footer__container-logo
+{
+    @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
 }

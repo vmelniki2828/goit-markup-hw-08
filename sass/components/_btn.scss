@@ -32,15 +32,40 @@
 }
 
 .buttons {
-    padding-top: 94px;
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .buttons__list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    list-style-type: none;
     cursor: pointer;
+    list-style-type: none;
+    
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 .buttons__item {

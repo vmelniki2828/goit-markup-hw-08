@@ -8,6 +8,14 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
     width: 528px;
+
+    @include mobile {
+            width: 450px;
+        }
+    
+        @include desktop {
+            width: 528px;
+        }
 }
 
 .modal__title {
@@ -61,17 +69,29 @@
 
 .modal__field-text {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    fill: #ffffff;
+        font-style: normal;
+        font-weight: 400;
+        color: #757575;
+    
+        @include mobile {
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+    
+    
+        }
+    
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 }
 
 .modal__field-text a {

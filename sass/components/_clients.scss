@@ -1,24 +1,60 @@
 .clients {
-    padding: 94px 0;
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include tablet{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .client__title {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--paragraph-color);
-    margin-bottom: 50px;
+
+    color: #212121;
+    
+        @include mobile {
+            font-size: 28px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            margin-bottom: 30px;
+        }
+    
+        @include desktop {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.03em;
+        }
 }
 
 .client__list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .client__item {
-    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 150px) / 6);
+        }
 }
 
 .client__item:last-child {
@@ -39,6 +75,14 @@
         fill: #2196F3;
         border-color: #2196F3;
     }
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 100%;
+        }
 }
 
 .client__link {
