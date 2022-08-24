@@ -70,6 +70,12 @@
     @include mobile{
         text-align: center;
     }
+    @include tablet{
+        text-align: left;
+    }
+    @include desktop{
+        text-align: left;
+    }
 }
 
 .about__text {

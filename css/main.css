@@ -92,7 +92,7 @@ body {
 }
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -508,7 +508,7 @@ body {
 }
 @media screen and (min-width: 320px) {
   .main .container {
-    width: 480px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -642,6 +642,16 @@ body {
 @media screen and (min-width: 320px) {
   .about__subtitle {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__subtitle {
+    text-align: left;
   }
 }
 
@@ -1547,7 +1557,6 @@ body {
 .pictures__item {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  height: 330px;
   width: calc((100% - 0px) / 1);
 }
 .pictures__item:hover, .pictures__item:focus {
@@ -1561,13 +1570,11 @@ body {
 @media screen and (min-width: 768px) {
   .pictures__item {
     width: calc((100% - 30px) / 2);
-    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
   .pictures__item {
     width: calc((100% - 60px) / 3);
-    height: 440px;
   }
 }
 

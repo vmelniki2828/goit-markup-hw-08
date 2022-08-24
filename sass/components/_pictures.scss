@@ -58,7 +58,6 @@
 .pictures__item {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    height: 330px;
 
     &:hover,
     &:focus {
@@ -74,12 +73,10 @@
     
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
-            height: 440px;
         }
     
         @media screen and (min-width: 1200px) {
             width: calc((100% - 60px) / 3);
-            height: 440px;
         }
 }
 
