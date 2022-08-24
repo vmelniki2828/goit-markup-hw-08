@@ -72,8 +72,13 @@
     padding-right: 80px;
     justify-content: space-between;
 
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: transform 250ms ease-in-out;
+
+    @include mobile{
+        padding-right: 70px;
+        padding-left: 30px;
+    }
 }
 
 .menu-container.is-open {

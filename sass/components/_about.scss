@@ -66,6 +66,10 @@
     text-transform: uppercase;
     color: var(--paragraph-color);
     margin-bottom: 10px;
+
+    @include mobile{
+        text-align: center;
+    }
 }
 
 .about__text {
